@@ -672,13 +672,17 @@ header .container .form i {
   letter-spacing: 1.5px;
 }
 .portfolio .more {
-  background-image: linear-gradient(    to right,    rgb(158, 13, 146, 0.4) 0,    rgba(19, 251, 233, 0.4) 100%  );
+  background-image: linear-gradient(
+    to right,
+    rgb(158, 13, 146, 0.4) 0,
+    rgba(19, 251, 233, 0.4) 100%
+  );
   color: white;
   padding: 15px 40px;
   display: block;
   width: fit-content;
   margin: 20px auto;
-  border-radius:10% ;
+  border-radius: 10%;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -693,10 +697,10 @@ header .container .form i {
   animation-play-state: paused;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  -webkit-border-radius:10% ;
-  -moz-border-radius:10% ;
-  -ms-border-radius:10% ;
-  -o-border-radius:10% ;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
 }
 .portfolio .more:hover {
   background-image: linear-gradient(
@@ -738,7 +742,7 @@ header .container .form i {
   left: 0;
   top: 0;
   width: 100%;
-  height: 99.50%;
+  height: 99.5%;
   background-color: rgba(0, 0, 0, 0.4);
 }
 .video video {
@@ -776,11 +780,11 @@ header .container .form i {
   background-color: var(--mainColor);
   color: white;
   cursor: pointer;
-  border-radius:10% ;
-  -webkit-border-radius:10% ;
-  -moz-border-radius:10% ;
-  -ms-border-radius:10% ;
-  -o-border-radius:10% ;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
 }
 .video .text a {
   background-image: linear-gradient(
@@ -798,11 +802,10 @@ header .container .form i {
   text-transform: uppercase;
   font-weight: 600;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .video .text {
     background: none;
   }
-  
 }
 .video .text a:hover {
   background-image: linear-gradient(
@@ -813,3 +816,401 @@ header .container .form i {
   animation-play-state: running;
 }
 /* Vid End */
+/* About */
+.aboutUs {
+  overflow: hidden;
+  position: relative;
+}
+.aboutUs img {
+  position: relative;
+  bottom: -20px;
+  margin-top: -20px;
+  max-width: 100%;
+  width: 600px;
+  left: 50%;
+  transform: translateX(-53.5%);
+  -webkit-transform: translateX(-53.5%);
+  -moz-transform: translateX(-53.5%);
+  -ms-transform: translateX(-53.5%);
+  -o-transform: translateX(-53.5%);
+  height: 600px;
+}
+@media (max-width: 767px) {
+  .aboutUs img {
+    width: 400px;
+    height: 400px;
+    margin-left: 7px;
+  }
+}
+/* About End */
+/* info  */
+.info {
+  background-image: url(../images/info.jpg);
+  background-size: cover;
+  position: relative;
+}
+.info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.info .container {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.info .container .box {
+  color: white;
+  padding: 50px;
+  background-image: var(--transPar-Main);
+  flex-basis: 25%;
+}
+@media (max-width: 767px) {
+  .info .container .box {
+    flex-basis: 100%;
+    border-bottom: 1px solid white;
+  }
+}
+@media (min-width: 768px) {
+  .info .container .box {
+    flex-basis: 50%;
+  }
+  .info .container .box:nth-child(1),
+  .info .container .box:nth-child(3) {
+    border-right: 1px solid white;
+  }
+  .info .container .box:nth-child(1),
+  .info .container .box:nth-child(2) {
+    border-bottom: 1px solid white;
+  }
+}
+@media (min-width: 1199px) {
+  .info .container .box {
+    flex-basis: 25%;
+  }
+  .info .container {
+    width: 100%;
+  }
+  .info .container .box:not(:last-child) {
+    border-right: 1px solid white;
+  }
+  .info .container .box:nth-child(1),
+  .info .container .box:nth-child(2) {
+    border-bottom: 1px solid transparent;
+  }
+}
+.info .container .box .wall {
+  width: fit-content;
+  background-color: #333;
+  position: relative;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 15px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info .container .box i {
+  position: relative;
+  padding: 5px;
+  font-size: 1.6rem;
+  background-image: var(--transPar-Main);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: clors 3s linear infinite alternate;
+  -webkit-animation: clors 3s linear infinite alternate;
+}
+.info .container .box .num {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 30px;
+}
+.info .container .box p {
+  background-color: #333;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  animation: clors2 4s linear infinite alternate;
+  -webkit-animation: clors2 7s linear infinite alternate;
+  animation-play-state: paused;
+}
+.info .container .box:hover p {
+  animation-play-state: running;
+}
+@keyframes clors2 {
+  0% {
+    background-color: #333;
+  }
+  10% {
+    background-color: var(--mainColor);
+  }
+  25% {
+    background-color: turquoise;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: teal;
+  }
+  100% {
+    background-image: linear-gradient(
+      to right,
+      rgb(158, 13, 146, 0.4) 0,
+      rgba(19, 251, 233, 0.4) 100%
+    );
+  }
+}
+/* info end */
+/* statusinf */
+.status .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 991px) {
+  .status .container > div {
+    flex-basis: 45%;
+  }
+}
+.status .container > div > h3 {
+  margin: 0 0 30px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.status .container > div > p {
+  color: #777;
+  line-height: 2;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 60px;
+  font-variant-caps: small-caps;
+}
+.status .container .box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .status .container .box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .status .container .box img {
+    position: relative;
+    left: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+}
+.status .container .box img {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin-right: 40px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.status .box img::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.status .testmonials .box .text {
+  line-height: 2;
+  border-bottom: 1px solid var(--mainColor);
+}
+.status .box .text p {
+  color: #777;
+  text-align: right;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background-image: var(--transPar-Main);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: clors2 4s linear infinite alternate;
+  -webkit-animation: clors2 7s linear infinite alternate;
+}
+.status .testmonials .bullets {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.status .testmonials .bullets li {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  background-image: var(--mainGradian);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: loading 1.2s linear infinite alternate;
+  -webkit-animation: loading 1.2s linear infinite alternate;
+}
+.status .testmonials .bullets:hover li {
+  animation-play-state: paused;
+}
+.status .testmonials .bullets li:first-child {
+  animation-delay: 0.6s;
+}
+.status .testmonials .bullets li:nth-child(2) {
+  animation-delay: 0.9s;
+}
+.status .testmonials .bullets li:nth-child(3) {
+  animation-delay: 1.1s;
+}
+@keyframes loading {
+  0% {
+    top: 0px;
+    background-image: var(--transPar-Main);
+  }
+  40% {
+    top: -10px;
+    background-color: var(--mainColor);
+  }
+  60% {
+    top: -10px;
+    background-color: turquoise;
+  }
+  80% {
+    top: -10px;
+    background-color: green;
+  }
+  100% {
+    top: -10px;
+    background-image: linear-gradient(
+      to right,
+      rgb(158, 13, 146, 0.4) 0,
+      rgba(19, 251, 233, 0.4) 100%
+    );
+  }
+}
+/* Skills */
+.status .skills {
+  margin-bottom: 50px;
+  flex-basis: 100%;
+}
+
+.status .skills .skill-prog {
+  margin-bottom: 60px;
+}
+.status .skills .skill-prog h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.status .skills .skill-prog .por {
+  background-color: #333;
+  height: 30px;
+}
+.skills .skill-prog .por span {
+  background-image: var(--mainGradian);
+  height: 100%;
+  display: block;
+  position: relative;
+  animation: loading 4s linear infinite;
+  -webkit-animation: loading2 4s linear infinite;
+}
+.skills .skill-prog .por span::before {
+  content: attr(data-progress);
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: -40px;
+  right: -18px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@keyframes loading2 {
+  0% {
+    background-image: var(--transPar-Main);
+  }
+  40% {
+    background-color: var(--mainColor);
+  }
+  60% {
+    background-color: turquoise;
+  }
+  80% {
+    background-color: green;
+  }
+  100% {
+    background-image: linear-gradient(
+      to right,
+      rgb(158, 13, 146, 0.4) 0,
+      rgba(19, 251, 233, 0.4) 100%
+    );
+  }
+}
+.skills .skill-prog .por span::after {
+  content: "";
+  border: 10px solid;
+  position: absolute;
+  border-color: #333 transparent transparent transparent;
+  top: -13px;
+  right: -9px;
+}
+/* statusinf End */
