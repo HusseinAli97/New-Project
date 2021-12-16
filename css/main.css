@@ -865,12 +865,18 @@ header .container .form i {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
+  padding: 50px;
 }
 .info .container .box {
   color: white;
   padding: 50px;
   background-image: var(--transPar-Main);
   flex-basis: 25%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 @media (max-width: 767px) {
   .info .container .box {
