@@ -1277,6 +1277,11 @@ header .container .form i {
   background-color: #ccc;
   padding: 30px;
   flex-basis: 45%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 @media (max-width:767px) {
   .price .prices .box:nth-child(1)::after,
