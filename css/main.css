@@ -26,6 +26,7 @@ html {
 }
 body {
   font-family: "Yanone Kaffeesatz", sans-serif;
+  background-color: #eee;
 }
 ul {
   list-style-type: none;
@@ -1214,3 +1215,256 @@ header .container .form i {
   right: -9px;
 }
 /* statusinf End */
+/* quote */
+.quote {
+  position: relative;
+  background-image: url(../images/quote.jpg);
+  background-size: cover;
+  text-align: center;
+  background-attachment: fixed;
+  display: flex;
+}
+.quote q {
+  font-size: 1.6rem;
+  display: block;
+  background-image: var(--transPar-Main);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: loading 4s linear infinite;
+  -webkit-animation: loading2 4s linear infinite;
+  font-weight: 800;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  position: relative;
+}
+.quote q::before {
+  content: " \f10d ";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 800;
+  font-size: 0.8rem;
+  margin-right: 10px;
+}
+.quote q::after {
+  content: " \f10e ";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 800;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+.quote span {
+  font-size: 1.1rem;
+  color: #333;
+  font-variant: small-caps;
+}
+/* quote end */
+/* pricing */
+.price .prices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  position: relative;
+}
+.price .prices .box {
+  background-color: #ccc;
+  padding: 30px;
+  flex-basis: 45%;
+}
+@media (max-width:767px) {
+  .price .prices .box:nth-child(1)::after,
+  .price .prices .box:nth-child(1)::before {
+    display: none;
+  }
+  .price .prices .box {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+.price .prices .box:nth-child(1)::after {
+  content: "";
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-image: linear-gradient(
+    rgb(19, 100, 251),
+    turquoise 33%,
+    rgba(101, 22, 170, 1)
+  );
+  height: 100%;
+}
+.price .prices .box:nth-child(1)::before {
+  content: "or";
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: white;
+  position: absolute;
+  left: 50%;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-image: linear-gradient(    rgb(19, 100, 251),    turquoise 33%,    rgba(101, 22, 170, 1)  );
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 1;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+.price .prices .box button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #444;
+  width: 100%;
+  outline: none;
+  font-weight: bold;
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  animation: loading2 7s linear infinite;
+  -webkit-animation: loading2 7s linear infinite;
+  animation-play-state: paused;
+  letter-spacing: 1.1px;
+  margin: 0 0 30px;
+}
+.price .prices .box button:hover {
+  animation-play-state: running;
+}
+.price .prices .box span {
+  display: block;
+  background-image: linear-gradient(
+    rgb(19, 100, 251),
+    turquoise 33%,
+    rgba(101, 22, 170, 1)
+  );
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto 30px;
+  text-align: center;
+  line-height: 300px;
+  color: white;
+  position: relative;
+}
+.price .box span p {
+  font-weight: 400;
+  font-size: 4rem;
+  position: relative;
+}
+.price .box span:hover {
+  background-image: none;
+  background-color: #333;
+}
+.price .box span::before {
+  content: "$";
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: absolute;
+  top: -35px;
+  left: 35%;
+}
+.price .box span::after {
+  content: "/mo";
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  position: absolute;
+  top: 25px;
+  left: 60%;
+}
+.price .box span:hover p,
+.price .box span:hover::before,
+.price .box span:hover::after {
+  background-image: var(--transPar-Main);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: loading2 2s linear infinite;
+  -webkit-animation: loading2 2s linear infinite;
+}
+.price .seemore:hover {
+  animation: loading2 2s linear infinite;
+  -webkit-animation: loading2 2s linear infinite;
+}
+
+.price .box .list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.price .box .list h4 {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 20px;
+  color: #333;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-image: var(--mainGradian);
+  border-image-slice: 1;
+  margin: 0 auto 30px;
+}
+.price .box .list i {
+  position: absolute;
+  left: 0;
+  padding-left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.price .box .list li {
+  position: relative;
+  padding: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--mainColor);
+  margin-bottom: 20px;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  text-align: center;
+}
+.price .box .list li:hover {
+  background-image: var(--transPar-Main);
+  animation: loading2 2s linear infinite;
+  -webkit-animation: loading2 2s linear infinite;
+  border-color: transparent;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.price .seemore {
+  display: block;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #333;
+  width: fit-content;
+  margin: 42px auto;
+  color: white;
+  letter-spacing: 1.3px;
+  font-size: 1.1rem;
+  background-image: var(--transPar-Main);
+}
+/* pricingend */
