@@ -1354,6 +1354,7 @@ header .container .form i {
   animation-play-state: paused;
   letter-spacing: 1.1px;
   margin: 0 0 30px;
+  cursor: pointer;
 }
 .price .prices .box button:hover {
   animation-play-state: running;
