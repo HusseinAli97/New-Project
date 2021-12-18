@@ -12,6 +12,8 @@
     rgb(158, 13, 146, 0.4) 0,
     rgba(19, 251, 233, 0.4) 100%
   );
+  --secColor: #333;
+  --thColor:#777;
 }
 /* Main ar end */
 /* General Elements */
@@ -106,7 +108,7 @@ ul {
   line-height: 2;
   font-size: 1.1rem;
   font-variant: small-caps;
-  color: #777;
+  color: var(--thColor);
 }
 /* General Elements End */
 /* Header */
@@ -289,6 +291,27 @@ header .container .form i {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.landing .arrow{
+  display: grid;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  z-index: 555;
+}
+
+.landing .arrow a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--secColor);
+  color: var(--thColor);
+}
+.landing .arrow a:hover {
+  background-image: var(--transPar-Main);
+  animation: loading2 1s linear infinite reverse ;
+  -webkit-animation: loading2 1s linear infinite reverse ;
+  color: white;
+}
 .landing .overlay {
   height: 100%;
   position: absolute;
@@ -449,7 +472,7 @@ header .container .form i {
 }
 .services .box .text p {
   line-height: 2;
-  color: #777;
+  color: var(--thColor);
   font-weight: normal;
 }
 .services .box i {
@@ -915,7 +938,7 @@ header .container .form i {
 }
 .info .container .box .wall {
   width: fit-content;
-  background-color: #333;
+  background-color: var(--secColor);
   position: relative;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -952,7 +975,7 @@ header .container .form i {
   margin: 0 0 30px;
 }
 .info .container .box p {
-  background-color: #333;
+  background-color: var(--secColor);
   text-align: center;
   font-size: 1.3rem;
   letter-spacing: 15px;
@@ -971,7 +994,7 @@ header .container .form i {
 }
 @keyframes clors2 {
   0% {
-    background-color: #333;
+    background-color: var(--secColor);
   }
   10% {
     background-color: var(--mainColor);
@@ -1013,7 +1036,7 @@ header .container .form i {
   text-transform: uppercase;
 }
 .status .container > div > p {
-  color: #777;
+  color: var(--thColor);
   line-height: 2;
   text-align: center;
   font-size: 1.3rem;
@@ -1080,7 +1103,7 @@ header .container .form i {
   border-bottom: 1px solid var(--mainColor);
 }
 .status .box .text p {
-  color: #777;
+  color: var(--thColor);
   text-align: right;
   font-size: 14px;
   margin-bottom: 20px;
@@ -1167,7 +1190,7 @@ header .container .form i {
   text-transform: uppercase;
 }
 .status .skills .skill-prog .por {
-  background-color: #333;
+  background-color: var(--secColor);
   height: 30px;
 }
 .skills .skill-prog .por span {
@@ -1180,7 +1203,7 @@ header .container .form i {
 }
 .skills .skill-prog .por span::before {
   content: attr(data-progress);
-  background-color: #333;
+  background-color: var(--secColor);
   color: white;
   padding: 5px 10px;
   border-radius: 10px;
@@ -1217,7 +1240,7 @@ header .container .form i {
   content: "";
   border: 10px solid;
   position: absolute;
-  border-color: #333 transparent transparent transparent;
+  border-color: var(--secColor) transparent transparent transparent;
   top: -13px;
   right: -9px;
 }
@@ -1262,7 +1285,7 @@ header .container .form i {
 }
 .quote span {
   font-size: 1.1rem;
-  color: #333;
+  color: var(--secColor);
   font-variant: small-caps;
 }
 /* quote end */
@@ -1383,7 +1406,7 @@ header .container .form i {
 }
 .price .box span:hover {
   background-image: none;
-  background-color: #333;
+  background-color: var(--secColor);
 }
 .price .box span::before {
   content: "$";
@@ -1429,7 +1452,7 @@ header .container .form i {
   font-size: 1.3rem;
   text-align: center;
   padding: 20px;
-  color: #333;
+  color: var(--secColor);
   letter-spacing: 1.5px;
   text-transform: uppercase;
   border-bottom-width: 2px;
@@ -1470,14 +1493,14 @@ header .container .form i {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  color: #333;
+  color: var(--secColor);
 }
 .price .seemore {
   display: block;
   text-transform: uppercase;
   padding: 10px 20px;
   text-decoration: none;
-  background-color: #333;
+  background-color: var(--secColor);
   width: fit-content;
   margin: 42px auto;
   color: white;
@@ -1724,7 +1747,7 @@ header .container .form i {
 .contactus .inputs .statu span {
   margin: 0 0 10px;
   display: block;
-  color: #777;
+  color: var(--thColor);
 }
 .contactus .inputs .statu i {
   text-transform: uppercase;
@@ -1741,7 +1764,7 @@ header .container .form i {
 .contactus .inputs .statu address {
   text-transform: uppercase;
   margin: 10px 0 5px;
-  color: #777;
+  color: var(--thColor);
 }
 /* end contactus */
 /* Footer */
@@ -1831,7 +1854,7 @@ footer::before{
 
 ::-webkit-scrollbar {
   width: 15px;
-  background-color: #333;
+  background-color: var(--secColor);
 }
 ::-webkit-scrollbar-track{
   box-shadow: inset 0 0 5px grey;
