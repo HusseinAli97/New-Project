@@ -1,13 +1,21 @@
 # hClinc-project-Tut
+
 -this project based on 
+
 1-graphberry > Kasper Template
+
 2-Elzero web school
+
 -codes taken from stackoverflow
+
 1-Scroll buttons
+
 2-text gradiant 
+
 this project created purely by hussein mohammed ali 
 
-**************************Links*****************
+
+************************** Links *****************
 
 -https://www.graphberry.com/item/kasper-one-page-creative-html-theme
 
@@ -19,7 +27,7 @@ this project created purely by hussein mohammed ali
 
 https://github.com/HusseinAli97/TemplateTwoTut
 
--main play list -https://www.youtube.com/watch?v=7_USXxmn7DM&list=PLDoPjvoNmBAy1l-2A21ng3gxEyocruT0t
+-main playlist :https://www.youtube.com/watch?v=7_USXxmn7DM&list=PLDoPjvoNmBAy1l-2A21ng3gxEyocruT0t
 
 
-*****************************©2021 all right resrved Kasper/graphberry ,elzerowebschool,husseinali**********************
+                        ©2021 all right resrved Kasper/graphberry ,elzerowebschool,husseinali 
