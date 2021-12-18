@@ -24,6 +24,7 @@ html {
   scroll-behavior: smooth;
   font-size: 18px;
 }
+
 body {
   font-family: "Yanone Kaffeesatz", sans-serif;
   background-color: #eee;
@@ -1519,11 +1520,11 @@ header .container .form i {
   max-width: 100%;
   flex-basis: 45%;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .subscribe form {
     width: 70%;
     left: -17%;
-}
+  }
   .subscribe .container {
     flex-direction: column;
   }
@@ -1553,7 +1554,7 @@ header .container .form i {
 .subscribe .container input[type="email"]:focus + i {
   color: white;
 }
-  .subscribe .container input[type="submit"] {
+.subscribe .container input[type="submit"] {
   border: 1px solid white;
   padding: 10px 15px;
   margin-left: -5px;
@@ -1562,7 +1563,11 @@ header .container .form i {
   font-weight: bold;
   cursor: pointer;
   border: 2px solid;
-  border-image: linear-gradient(    to right,    rgba(19, 251, 233, 0.4) 0%,    rgb(158, 13, 146, 0.4) 100%  );
+  border-image: linear-gradient(
+    to right,
+    rgba(19, 251, 233, 0.4) 0%,
+    rgb(158, 13, 146, 0.4) 100%
+  );
   border-image-slice: 1;
   border-left: transparent;
   border-right: transparent;
@@ -1574,7 +1579,7 @@ header .container .form i {
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .subscribe .container input[type="submit"] {
     margin-left: -20px;
   }
@@ -1597,8 +1602,8 @@ header .container .form i {
   color: white;
   font-variant: small-caps;
   margin-left: 20px;
-} 
-@media (max-width:767px) {
+}
+@media (max-width: 767px) {
   .subscribe .container p {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -1607,3 +1612,293 @@ header .container .form i {
   }
 }
 /* Subscribe End */
+/* contactus */
+.contactus .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+}
+.contactus .inputs form {
+  display: grid;
+  position: relative;
+  max-width: 100%;
+  flex-basis: 60%;
+  row-gap: 20px;
+}
+.contactus .inputs .statu {
+  flex-basis: 20%;
+}
+@media (max-width: 767px) {
+  .contactus .inputs .statu {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+.contactus .inputs form input[type="text"],
+.contactus .inputs form input[type="email"] {
+  padding: 10px 60px;
+  border: 2px solid;
+  border-image: var(--transPar-Main);
+  border-image-slice: 1;
+  caret-color: var(--mainColor);
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  position: relative;
+}
+.contactus .inputs form textarea {
+  padding: 10px 60px;
+  border: 2px solid;
+  border-image: var(--transPar-Main);
+  border-image-slice: 1;
+  caret-color: var(--mainColor);
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  width: 100%;
+  height: 150px;
+}
+.contactus .inputs form input[type="text"]:focus,
+.contactus .inputs form input[type="email"]:focus,
+.contactus .inputs form textarea:focus {
+  outline: none;
+  color: white;
+  background-image: var(--transPar-Main);
+  animation: loading2 10s linear infinite;
+  -webkit-animation: loading2 10s linear infinite;
+}
+.contactus .inputs form input[type="text"]:focus::placeholder,
+.contactus .inputs form input[type="email"]:focus::placeholder,
+.contactus .inputs textarea:focus::placeholder,
+.contactus .inputs form input[type="text"]:focus + i,
+.contactus .inputs form input[type="email"]:focus + i {
+  color: white;
+}
+.contactus .inputs form input[type="text"] + i {
+  position: absolute;
+  top: 5.7%;
+  left: 25px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.contactus .inputs form input[type="email"] + i {
+  position: absolute;
+  top: 21.7%;
+  left: 25px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.contactus .inputs form input[type="submit"] {
+  padding: 20px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background-image: var(--mainGradian);
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 50px;
+}
+.contactus .inputs form input[type="submit"]:hover {
+  animation: loading2 4s linear infinite;
+  -webkit-animation: loading2 4s linear infinite;
+}
+.contactus .inputs .statu h4 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin: 0 0 30px;
+}
+.contactus .inputs .statu span {
+  margin: 0 0 10px;
+  display: block;
+  color: #777;
+}
+.contactus .inputs .statu i {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin: 0 0 5px;
+  margin-left: 25px;
+}
+@media (max-width: 767px) {
+  .contactus .inputs .statu i {
+    text-align: center;
+    margin: 0;
+  }
+}
+.contactus .inputs .statu address {
+  text-transform: uppercase;
+  margin: 10px 0 5px;
+  color: #777;
+}
+/* end contactus */
+/* Footer */
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(../images/footer.jpg);
+  background-size: cover;
+  position: relative;
+}
+footer::before{
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.foot .container {
+  position: relative;
+  text-align: center;
+}
+.foot .container img {
+  height: 68px;
+  margin:0 auto 20px;
+}
+.foot .container h2 {
+  text-transform: uppercase;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  font-size: 22px;
+  width: fit-content;
+  margin: 20px auto;
+  color: white;
+}
+.foot .container ul {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.foot .container ul li {
+  cursor: pointer;
+  margin: 10px 15px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--transPar-Main);
+  animation: loading2 3s linear infinite alternate;
+  -webkit-animation: loading2 3s linear infinite alternate;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+.foot .container p {
+  color: white;
+  font-size: .9rem;
+}
+.foot .container p span {
+  font-weight: bold;
+}
+.foot .container span:nth-child(2) {
+  color: var(--mainColor);
+}
+.foot .container span:not(.copy):last-child {
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--transPar-Main);
+  animation: loading2 7s linear infinite ;
+  -webkit-animation: loading2 7s linear infinite ;
+  font-weight: bold;
+}
+.foot span a {
+  text-transform: uppercase;
+  color: var(--mainColor);
+  text-decoration: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: var(--transPar-Main);
+  animation: loading2 7s linear infinite reverse ;
+  -webkit-animation: loading2 7s linear infinite reverse ;
+}
+/* Footer end */
+/* scroll */
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #333;
+}
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 5px grey;
+  background-image: var(--mainGradian);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-image: linear-gradient(
+    rgb(19, 243, 251),
+    rgba(101, 22, 170)
+  );
+}
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(
+    rgba(101, 22, 170, 1),
+    rgb(19, 243, 251)
+  );
+  
+}
+
+/* Buttons Stack over floww */
+::-webkit-scrollbar-button:single-button {
+  background-color: rgb(64, 64, 64);
+
+  display: block;
+  background-size: 10px;
+  background-repeat: no-repeat;
+}
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  height: 12px;
+  width: 16px;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(112, 112, 112)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  height: 12px;
+  width: 16px;
+  background-position: center 2px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(112, 112, 112)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
